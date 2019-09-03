@@ -68,9 +68,14 @@ Basically this implementation converts DAUs into a single K x K kernel, and then
 
 ## Usage with tf.contrib.layer.conv2d compatible API
 
-We provide a wrapper based on `tf.contrib.layer.conv2d()` API, that is also compatible/interchangeable with the `dau_conv2d` from [DAU-ConvNet](http://github.com/skokec/DAU-ConvNet). There are two available methods to use: 
+We provide a wrapper based on `tf.contrib.layer.conv2d()` API, that is also compatible/interchangeable with the `dau_conv2d` from [DAU-ConvNet](http://github.com/skokec/DAU-ConvNet). 
+
+
+There are two available methods to use: 
 
 ```python
+from dau_conv_tf import dau_conv2d_tf
+
 dau_conv2d_tf(inputs,
              filters, # number of output filters
              dau_units, # number of DAU units per image axis, e.g, (2,2) for 4 DAUs per filter 
@@ -100,6 +105,7 @@ dau_conv2d_tf(inputs,
 ```
  
 ```python
+from dau_conv_tf import DAUConv2dTF
 
 DAUConv2dTF(filters, # number of output filters
            dau_units, # number of DAU units per image axis, e.g, (2,2) for 4 DAUs total per one filter
