@@ -263,8 +263,8 @@ class DAUConv2dTF(base.Layer):
 
             # add mu1/mu2 gradient multiplyer
             if mu_learning_rate_factor != 1:
-                dau_mu1 = mu_learning_rate_factor * dau_mu1 + (1 - mu_learning_rate_factor) * tf.gradient_stop(dau_mu1)
-                dau_mu2 = mu_learning_rate_factor * dau_mu2 + (1 - mu_learning_rate_factor) * tf.gradient_stop(dau_mu2)
+                dau_mu1 = mu_learning_rate_factor * dau_mu1 + (1 - mu_learning_rate_factor) * tf.stop_gradient(dau_mu1)
+                dau_mu2 = mu_learning_rate_factor * dau_mu2 + (1 - mu_learning_rate_factor) * tf.stop_gradient(dau_mu2)
 
             [X,Y] = np.meshgrid(np.arange(max_kernel_size),np.arange(max_kernel_size))
 
