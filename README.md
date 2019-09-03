@@ -70,6 +70,10 @@ Basically this implementation converts DAUs into a single K x K kernel, and then
 
 We provide a wrapper based on `tf.contrib.layer.conv2d()` API, that is also compatible/interchangeable with the `dau_conv2d` from [DAU-ConvNet](http://github.com/skokec/DAU-ConvNet). 
 
+Install using pip:
+```bash
+sudo pip3 install https://github.com/skokec/DAU-ConvNet-TF/releases/download/untagged-018f6ff73d33b204347f/dau_conv_tf-1.0-py3-none-any.whl  
+```
 
 There are two available methods to use: 
 
