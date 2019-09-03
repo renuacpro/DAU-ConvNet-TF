@@ -72,7 +72,7 @@ We provide a wrapper based on `tf.contrib.layer.conv2d()` API, that is also comp
 
 Install using pip:
 ```bash
-sudo pip3 install https://github.com/skokec/DAU-ConvNet-TF/releases/download/1.0/dau_conv_tf-1.0-py3-none-any.whl  
+sudo pip3 install https://github.com/skokec/DAU-ConvNet-TF/releases/download/v1.0/dau_conv_tf-1.0-py3-none-any.whl  
 ```
 
 There are two available methods to use: 
